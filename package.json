@@ -1,0 +1,16 @@
+{
+  "name": "icaro-extra-exercises",
+  "version": "1.0.0",
+  "description": "Icaro — Module 1 Extra Exercises",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "JotaCeR",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
+}

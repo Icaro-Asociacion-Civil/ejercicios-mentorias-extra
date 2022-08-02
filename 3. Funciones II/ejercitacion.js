@@ -15,7 +15,7 @@ function comidasFavoritas(john, joe) {
 
 }
 
-// La función recibe un objeto literal 'clientes' y en dónde cada propiedad de dicho objeto es otro objeto
+// La función recibe un objeto literal 'clientes' en dónde cada propiedad de dicho objeto es otro objeto
 // representando un cliente.
 // Cada cliente entre sus propiedades tiene una llamada 'suscription' cuyos valores posibles son true o false.
 // La función debe retornar un número que represente la cantidad total de clientes con una suscripcción activa.
@@ -69,8 +69,8 @@ function soloPuntas(numeros) {
 
 // La función recibe un array de strings con distintas frases como parámetro. Y debes escribir el código necesario
 // para que de entre todas esas frases la función retorne la palabra más extensa.
-// Ej: ["Aquí iría una de las frases", "luego continúa con otra frase de este estilo", "y finalmente una mas corta."]
-// la función debería retornar la palabra: 'finalmente' ya que es la más extensa en letras (10) 
+// Ej: ["Aquí iría una de las frases", "luego continúa con otra frase de este estilo", "y finalmente una mas corta"]
+// la función debería retornar la palabra: 'finalmente' ya que es la más extensa en caracteres (10) 
 // de entre todas las palabras de las frases recibidas dentro del array.
 function palabra(frases) {
     // TU CÓDIGO AQUÍ
@@ -87,4 +87,15 @@ function palabra(frases) {
 function divisores(n) {
     // TU CÓDIGO AQUÍ
 
+}
+
+
+// No tocar el código debajo
+
+module.exports = {
+    comidasFavoritas,
+    clienteActivo,
+    soloPuntas,
+    palabra,
+    divisores
 }

@@ -12,7 +12,7 @@ function operar(n1, n2, operador) {
 
 }
 
-// ¿Te animás a añadir a la función 'operar' la funcionalidad de 'r' por raíz?
+// ¿Te animás a añadir a la función 'operar' la funcionalidad de 'rz' por raíz?
 
 // En la intersección de dos calles de doble mano cada una, hay un semáforo. Este semáforo es especial ya que se
 // pone en rojo en las dos calles y las cuatro manos a la vez. Y espera para colocarse en verde con una condición
@@ -29,11 +29,11 @@ function semaforo(in1, in2, in3, in4) {
 
 // Un taller mecánico se especializa en el pintado de carrocerías. Tal es así que semanalmente reciben un lote de
 // coches y deben revisar el pedido de esa semana para saber cuáles coches pintar y cuáles no.
-// La función debajo recibe 3 parámetros: un array de coches, un color de pintura (string) y un objeto pedido con
-// dos propiedades: modelo y color.
-// La función debe retornar el número de coches que se pintarán esa semana coincidiendo que se pinten todos los
-// coches cuyo modelo coincida con el del pedido. Si es que la pintura de esa semana coincide con la del pedido
-// también.
+// La función debajo recibe 3 parámetros: un array de coches (strings), un color de pintura (string) y un objeto pedido
+// con dos propiedades: modelo y color.
+// La función debe retornar el número de coches que se pintarán esa semana. Teniendo en cuenta que se pinten todos
+// los coches cuyo modelo coincida con el del pedido. Siempre vigilando que la pintura de esa semana coincida con
+// la del pedido también.
 function pintorAutomatico(coches, pintura, pedido) {
     // TU CÓDIGO AQUÍ.
 
@@ -52,4 +52,16 @@ function calcularPromedio(notas) {
 function ordenarArray(valores) {
     // TU CÓDIGO AQUÍ.
 
+}
+
+//
+// No tocar el código debajo:
+//
+
+module.exports = {
+    operar,
+    semaforo,
+    pintorAutomatico,
+    calcularPromedio,
+    ordenarArray
 }
