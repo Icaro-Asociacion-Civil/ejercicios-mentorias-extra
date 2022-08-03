@@ -8,7 +8,7 @@ class Animal {
 // Define la clase 'Mamifero' debajo que extienda la clase 'Animal' y al constructor agrégale el
 // parámetro: sangre_caliente (boolean) que sea verdadero y domesticado (undefined).
 class Mamifero extends Animal {
-// AQUÍ TU CÓDIGO:
+    // AQUÍ TU CÓDIGO:
 
 
 }
@@ -16,10 +16,9 @@ class Mamifero extends Animal {
 // Define la clase 'Perro' debajo que extienda la clase 'Mamifero' y al constructor agrégale el
 // parámetro: dueño (string) y domesticado (boolean) que sea verdadero. Además sobrescribe extendiendo el método
 // llamado 'gruñir' para que retorne '¡Grrr, grrr!'.
-// Por último define un método llamado 'jugar' que reciba un parámetro (string) e imprima el string:
-// '¡Jugando con [parámetro recibido]!'
+// Por último define un método llamado 'jugar' que reciba un parámetro (string) y retorne '¡Jugando con [parámetro recibido]!'.
 class Perro extends Mamifero {
-// AQUÍ TU CÓDIGO:
+    // AQUÍ TU CÓDIGO:
 
 
 }
