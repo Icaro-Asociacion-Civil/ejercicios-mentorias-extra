@@ -13,6 +13,7 @@ function operar(n1, n2, operador) {
 }
 
 // ¿Te animás a añadir a la función 'operar' la funcionalidad de 'rz' por raíz?
+// Aclaración: solo para raíz cuadrada y raíz cúbica.
 
 // En la intersección de dos calles de doble mano cada una, hay un semáforo. Este semáforo es especial ya que se
 // pone en rojo en las dos calles y las cuatro manos a la vez. Y espera para colocarse en verde con una condición
