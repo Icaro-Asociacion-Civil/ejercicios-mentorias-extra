@@ -1,5 +1,5 @@
 # Material Didáctico
-Este repositorio cuenta con material de práctica para los estudiantes de la <u>diplomatura</u> en *desarrollo web* impartida por la **Fundación Ícaro**.
+Este repositorio cuenta con material de práctica para los estudiantes de la <u>diplomatura</u> en *desarrollo web* impartida por **ICARO**.
 <br>
 <br>
 Cuenta con distintas carpetas numeradas y ordenadas que a su vez poseen un nombre descriptivo del tema que abarcan. Lógicamente el material está organizado de forma intencionada para que se realice y practique desde el número 1 en adelante.
