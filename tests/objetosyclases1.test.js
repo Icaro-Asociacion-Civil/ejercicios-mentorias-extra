@@ -27,13 +27,13 @@ describe('Objetos & Clases I', () => {
                 }
             }
         }
-        
+
         it('Debería retornar: ["#482", "Fusión en frío", "IBM-NASA-4215", "XT-746", ["3.7 segundos", "500 litros"]]', () => {
-            expect(desarmar(nave)).toEqual(["#482", "Fusión en frío", "IBM-NASA-4215", "XT-746", ["3.7 segundos", "500 litros"]])
+            expect(desarmar(nave)).toEqual(expect.arrayContaining(["#482", "Fusión en frío", "IBM-NASA-4215", "XT-746", ["3.7 segundos", "500 litros"]]))
         })
 
         it('Debería retornar: ["Chewbacca", "circular", "Han Solo", "perseguida", [true, "Naboo"]]', () => {
-            expect(desarmar(milleniumFalcon)).toEqual(["Chewbacca", "circular", "Han Solo", "perseguida", [true, "Naboo"]])
+            expect(desarmar(milleniumFalcon)).toEqual(expect.arrayContaining(["Chewbacca", "circular", "Han Solo", "perseguida", [true, "Naboo"]]))
         })
     })
 
@@ -67,11 +67,11 @@ describe('Objetos & Clases I', () => {
 
     describe('crearFamilia', () => {
         it('Debería retornar correctamente un array de objetos Personas al invocar la función', () => {
-            expect(crearFamilia(['Juan', 24, 'argentino', 'CABA'], ['Andrés', 25, 'argentino', 'CABA'], ['Sol', 23, 'argentina', 'CABA'])).toEqual([{nombre: 'Juan', edad: 24, nacionalidad: 'argentino', residencia: 'CABA'}, {nombre: 'Andrés', edad: 25, nacionalidad: 'argentino', residencia: 'CABA'}])
+            expect(crearFamilia(['Juan', 24, 'argentino', 'CABA'], ['Andrés', 25, 'argentino', 'CABA'], ['Sol', 23, 'argentina', 'CABA'])).toEqual(expect.arrayContaining([{ nombre: 'Juan', edad: 24, nacionalidad: 'argentino', residencia: 'CABA' }, { nombre: 'Andrés', edad: 25, nacionalidad: 'argentino', residencia: 'CABA' }]))
         })
 
         it('Debería retornar correctamente un array de objetos Personas incluso con los valores asignados para sus métodos', () => {
-            expect(crearFamilia(['Lionel', 36, 'argentino', 'Paris', 'futbolista', ['juntarse con amigos', 'jugar a la play']], ['Antonella', 35, 'argentina', 'Paris', 'modelo'])).toEqual([{nombre: 'Lionel', edad: 36, nacionalidad: 'argentino', residencia: 'Paris', profesion: 'futbolista', hobbies: ['juntarse con amigos', 'jugar a la play']}, {nombre: 'Antonella', edad: 35, nacionalidad: 'argentina', residencia: 'Paris', profesion: 'modelo'}])
+            expect(crearFamilia(['Lionel', 36, 'argentino', 'Paris', 'futbolista', ['juntarse con amigos', 'jugar a la play']], ['Antonella', 35, 'argentina', 'Paris', 'modelo'])).toEqual(expect.arrayContaining([{ nombre: 'Lionel', edad: 36, nacionalidad: 'argentino', residencia: 'Paris', profesion: 'futbolista', hobbies: ['juntarse con amigos', 'jugar a la play'] }, { nombre: 'Antonella', edad: 35, nacionalidad: 'argentina', residencia: 'Paris', profesion: 'modelo' }]))
         })
     })
 })

@@ -7,7 +7,7 @@ describe('Funciones I', () => {
         })
 
         it('Debería retornar 4 para 20, 16 y "r"', () => {
-            expect(operar(20, 16, 'r')).toEqul(4)
+            expect(operar(20, 16, 'r')).toEqual(4)
         })
 
         it('Debería retornar 60 para 20, 3 y "m"', () => {
@@ -33,11 +33,11 @@ describe('Funciones I', () => {
         })
 
         it('Debería retornar [77, 59, 32, 17]', () => {
-            expect(semaforo(17, 32, 59, 77)).toEqual([17, 32, 59, 77])
+            expect(semaforo(17, 59, 32, 77)).toEqual([77, 59, 32, 17])
         })
 
         it('Bonus: Deberia retornar [14, 31, 41, 77]', () => {
-            expect(semaforo(77, 14, 41, 31, 'reverse')).toEqual([14, 31, 41, 77])
+            expect(semaforo(77, 14, 41, 31, 'reverse')).toEqual([77, 41, 31, 14])
         })
     })
 
@@ -79,15 +79,12 @@ describe('Funciones I', () => {
     })
 
     describe('ordenarArray', () => {
-        const first = [77, 21, 31, 9, 20, 2]
-        const second = [45, 23, 24, 6, 88, 82, 5, 3]
-
         it('Debería retornar: [2, 9, 20, 21, 31, 77]', () => {
-            expect(ordenarArray(first)).toEqual([2, 9, 20, 21, 31, 77])
+            expect(ordenarArray([77, 21, 31, 9, 20, 2])).toEqual([2, 9, 20, 21, 31, 77])
         })
 
         it('Debería retornar: [3, 5, 6, 23, 24, 45, 82, 88]', () => {
-            expect(ordenarArray(second)).toEqual([3, 5, 6, 23, 24, 45, 82, 88])
+            expect(ordenarArray([45, 23, 24, 6, 88, 82, 5, 3])).toEqual([3, 5, 6, 23, 24, 45, 82, 88])
         })
     })
 })

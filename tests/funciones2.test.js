@@ -13,15 +13,15 @@ describe('Funciones II', () => {
         }
 
         it('Debería retornar: ["empanadas", "guiso", "medialunas"]', () => {
-            expect(comidasFavoritas(john, joe)).toEqual(["empanadas", "guiso", "medialunas"])
+            expect(comidasFavoritas(john, joe)).toEqual(expect.arrayContaining(["empanadas", "guiso", "medialunas"]))
         })
 
         it('Debería retornar: ["hamburguesas", "pizza", "sopa"]', () => {
-            expect(comidasFavoritas(john, mary)).toEqual(["hamburguesas", "pizza", "sopa"])
+            expect(comidasFavoritas(john, mary)).toEqual(expect.arrayContaining(["hamburguesas", "pizza", "sopa"]))
         })
 
         it('Debería retornar: ["asado", "papas fritas", "tostado"]', () => {
-            expect(comidasFavoritas(joe, mary)).toEqual(["asado", "papas fritas", "tostado"])
+            expect(comidasFavoritas(joe, mary)).toEqual(expect.arrayContaining(["asado", "papas fritas", "tostado"]))
         })
     })
 
